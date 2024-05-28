@@ -7,8 +7,10 @@ async function init() {
   const PORT = 4000;
   const io = new Server({
     cors: {
-      allowedHeaders: ["http://localhost:3000"],
-      origin: "http://localhost:3000",
+      allowedHeaders: ["https://riksham-app.onrender.com"],
+      origin: "https://riksham-app.onrender.com",
+      // allowedHeaders: ["http://localhost:3000"],
+      // origin: "http://localhost:3000",
     },
   });
   io.attach(httpServer);
